@@ -1,0 +1,1196 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1b1919;
+}
+
+.header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    gap: 15px;
+}
+
+hr {
+    color: white;
+    width: 100%;
+}
+
+.logo {
+    width: 150px;
+    height: 60px;
+    font-size: 30px;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.7s;
+    color: white;
+
+    &:hover {
+        color: black;
+        background-color: beige;
+    }
+}
+
+.menu {
+    width: auto;
+    height: auto;
+    z-index: 99999999999;
+
+    ul {
+        width: auto;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+
+        li {
+            width: 150px;
+            height: auto;
+            overflow: hidden;
+            border-radius: 20px;
+
+            a {
+                text-decoration: none;
+                transition: 0.7s;
+                color: white;
+                display: block;
+                padding: 10px;
+                text-align: center;
+
+                &:hover {
+                    color: black;
+                    background-color: aliceblue;
+                }
+            }
+        }
+    }
+}
+
+.propatiesBanner{
+    width: 100%;
+    height: 400px;
+    background-image: url('https://as2.ftcdn.net/v2/jpg/05/66/78/33/1000_F_566783348_vUFpoh0V60jzF9PcNa3uY7Ms3rtSz4Wm.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        backdrop-filter: blur(7px);
+    }
+}
+.contactBunner{
+    width: 100%;
+    height: 500px;
+    background-image: url('https://www.architettiamo.it/wordpress/wp-content/uploads/2023/09/case-moderne-1024x457.jpg');
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        backdrop-filter: blur(7px);
+    }
+}
+.homeBunner{
+    width: 100%;
+    height: 500px;
+    background-image: url('https://static.vecteezy.com/system/resources/thumbnails/030/325/063/small/3d-modern-house-scandinavian-style-neutral-colors-minimalism-generative-ai-photo.jpg');
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        backdrop-filter: blur(7px);
+    }
+}
+.imgTextFirst {
+    width: auto;
+    height: auto;
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: aliceblue;
+    top: 5px;
+    z-index: 4;
+
+    p {
+        color: rgb(184, 193, 202);
+        font-size: 20px;
+    }
+}
+
+.imgText {
+    width: auto;
+    height: auto;
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: aliceblue;
+    position: absolute;
+    top: 5px;
+    z-index: 4;
+
+    p {
+        color: rgb(184, 193, 202);
+        font-size: 20px;
+    }
+}
+
+.homeProduct {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 70px auto;
+    width: auto;
+    height: 600px;
+}
+
+.homeProduct_img {
+    width: 400px;
+    height: 600px;
+    transition: 0.5s;
+    position: relative;
+    border-radius: 20px;
+
+    img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+}
+
+.middle_div {
+    width: 400px;
+    height: 600px;
+    position: relative;
+    margin: 20px 10px;
+    background-color: #1b1919;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.high_div {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.low_div {
+    width: 100%;
+    height: a;
+
+    p {
+        width: 100%;
+        height: 100%;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        margin-left: 5px;
+        align-items: center;
+        color: white;
+    }
+}
+
+.last_div {
+    width: 400px;
+    height: 600px;
+    position: relative;
+    background-color: #1b1919;
+    border-radius: 20px;
+    margin: 20px 25px;
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    &:hover {
+        transform: scale(1.2);
+    }
+
+    hr {
+        width: 150px;
+        color: white;
+    }
+
+    h4 {
+        color: aliceblue;
+        font-size: 27px;
+    }
+
+    p {
+        font-size: 22px;
+        color: grey;
+    }
+}
+
+.mainDiv {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.firstCONTACT {
+    width: 100%;
+    height: 100%;
+    background-color: #1b1919;
+    padding: 20px;
+
+    h2 {
+        color: aliceblue;
+        font-size: 35px;
+    }
+}
+
+.pClass {
+    width: 100%;
+    height: auto;
+    margin: 25px auto;
+
+    p {
+        color: aliceblue;
+    }
+}
+
+.icon {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: aliceblue;
+    border: 2px solid gray;
+    margin: 20px auto;
+    border-radius: 10px;
+    font-size: 40px;
+    transition: 0.5s;
+    gap: 50px;
+
+    &:hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 15px gray;
+    }
+    ul{
+        width: 100%;
+        height: auto;
+        li {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: start;
+        }
+    }
+}
+
+.text_div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    z-index: 3;
+
+    p {
+        font-size: 25px;
+        color: grey;
+    }
+}
+
+.sing_in {
+    width: 45%;
+    height: 100%;
+    padding: 20px;
+
+    form {
+        display: flex;
+        justify-content: center;
+        margin: 50px auto;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+
+        input {
+            padding: 5px 10px;
+            width: 80%;
+            height: 50px;
+            font-size: 18px;
+            background-color: aliceblue;
+            border-radius: 15px;
+
+            &:focus {
+                box-shadow: 0 0 15px grey;
+            }
+        }
+    }
+}
+
+.lowDiv {
+    width: 100%;
+    height: 600px;
+    background-image: url("https://img.freepik.com/free-photo/luxury-pool-villa-spectacular-contemporary-design-digital-art-real-estate-home-house-property-ge_1258-150759.jpg");
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.lowDiv::after{
+    content: '';
+    left: 0;
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(10px);
+}
+
+.videoDiv {
+    width: 800px;
+    height: 400px;
+    background-color: black;
+    transform: translateY(170px);
+    border-radius: 15px;
+    overflow: hidden;
+    margin: auto 400px;
+    position: absolute;
+    z-index: 3;
+
+    iframe {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.bildingsInfo {
+    margin: 230px auto;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+
+    div {
+        border-radius: 15px;
+        width: 300px;
+        height: 100px;
+        background-color: rgb(138, 135, 130);
+
+        p {
+            font-size: 30px;
+            display: flex;
+            padding: 20px;
+            justify-content: center;
+        }
+    }
+}
+
+.lsatHomeProduct {
+    width: 70%;
+    height: 600px;
+    margin: auto 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.lowFirstDiv {
+    width: 400px;
+    position: relative;
+    height: 500px;
+    border-radius: 20px;
+    transition: 0.6s;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.lowFirstDiv_text {
+    padding: 10px;
+    font-size: 35px;
+    color: aliceblue;
+    width: 100%;
+    height: 150px;
+}
+
+.lowFirstDiv_text2 {
+    gap: 15px;
+    margin-top: 40px;
+    font-size: 20px;
+    color: aliceblue;
+    position: relative;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    hr {
+        width: 100%;
+        color: gray;
+    }
+
+    h4 {
+        font-size: 20px;
+        color: rgb(114, 117, 119);
+    }
+
+    p {
+        color: aliceblue;
+        font-size: 25px;
+    }
+}
+
+.lowMiddleDiv {
+    width: 400px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px beige;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.lowLastDiv {
+    width: 400px;
+    height: 500px;
+    transition: 0.5s;
+
+    &:hover {
+        box-shadow: 0 0 15px gray;
+    }
+}
+
+.lowLastDiv_text {
+    width: 100%;
+    height: auto;
+    font-size: 40px;
+    color: aliceblue;
+}
+
+.lowLastDiv_text2 {
+    width: 100%;
+    height: auto;
+    font-size: 20px;
+    color: rgb(210, 220, 228);
+    margin-top: 40px;
+}
+
+.products {
+    width: 100%;
+    height: auto;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 35px;
+}
+
+.item {
+    width: 400px;
+    height: 550px;
+}
+
+.prod_img {
+    width: 100%;
+    height: 300px;
+
+    img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.prod_info {
+    gap: 20px;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+    align-items: center;
+    justify-content: center;
+    margin: 15px auto;
+    border-radius: 10px;
+
+    h2 {
+        color: aliceblue;
+        font-size: 30px;
+    }
+
+    span {
+        color: aliceblue;
+        font-size: 25px;
+    }
+
+    p {
+        font-size: 15px;
+        color: aliceblue;
+    }
+}
+.menu_btn{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    font-size: 25px;
+    color: aliceblue;
+    background-color: #1b1919;
+    display: none;
+    right: 5%;
+    transition: 0.6s;
+    top: 25px;
+    &:hover{
+        background-color: aliceblue;
+        color: #1b1919;
+    }
+}
+
+
+@media(min-width:1200px) {
+    body {
+        background-color: #1b1919;
+    }
+
+    .products {
+        flex-wrap: wrap;
+    }
+
+    .icon {
+        width: auto;
+        height: auto;
+    }
+    .mainDiv {
+        width: 100%;
+    }
+
+    .videoDiv {
+        margin: 10px auto;
+        width: 900px;
+        height: 500px;
+
+        iframe {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .firstCONTACT{
+        width: 50%;
+        height: auto;
+    }
+    .homeProduct{
+        padding: 30px;
+    }
+    .homeProduct_img{
+        width: 600px;
+        height: 500px;
+    }
+}
+
+@media(min-width:1024px) and (max-width:1200px) {
+    body {
+        background-color: #1b1919;
+    }
+    .products {
+        flex-wrap: wrap;
+    }
+    .icon {
+        width: auto;
+        height: auto;
+        font-size: 25px;
+    }
+    .propatiesBanner {
+        width: 100%;
+        height: 350px;
+    }
+    .mainDiv {
+        width: 100%;
+        height: auto;
+    }
+    .lowDiv {
+        width: 100%;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .videoDiv {
+        margin: 100px auto;
+        width: 600px;
+        height: 400px;
+
+        iframe {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .lowFirstDiv_text2 {
+        font-size: 10px;
+    }
+    .bildingsInfo div {
+        border-radius: 15px;
+        width: 200px;
+        height: 100px;
+    }
+    .lsatHomeProduct {
+        overflow: hidden;
+        width: 100%;
+        height: auto;
+        margin: auto 1px;
+        left: 0;
+        padding: 20px;
+    }
+    .lowFirstDiv_text2 {
+        font-size: 5px;
+    }
+    .bildingsInfo div {
+        border-radius: 15px;
+        width: 200px;
+        height: 100px;
+    }
+    .firstCONTACT{
+        width: 400px;
+    }
+    .homeProduct{
+        padding: 30px;
+    }
+    .homeProduct_img{
+        width: 600px;
+        height: 500px;
+    }
+}
+
+@media(min-width:768px) and (max-width:1024px) {
+    body {
+        background-color: #1b1919;
+    }
+    .products {
+        flex-wrap: wrap;
+    }
+    .icon {
+        width: auto;
+        font-size: 15px;
+        height: auto;
+    }
+    .propatiesBanner {
+        width: 100%;
+        height: 300px;
+    }
+    .mainDiv {
+        width: 100%;
+    }
+    .lowDiv {
+        width: 100%;
+    }
+    .low_div p {
+        font-size: 17px;
+    }
+    .videoDiv {
+        margin: 100px auto;
+        width: 600px;
+        height: 300px;
+
+        iframe {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+
+        }
+    }
+    .homeProduct {
+        overflow: hidden;
+        width: 100%;
+        height: auto;
+        margin: auto 1px;
+        left: 0;
+        gap: 25px;
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .homeProduct_img{
+        width: 300px;
+        height: 400px;
+    }
+    .middle_div{
+        width: 300px;
+        height: 300px;
+    }
+    .high_div{
+        font-size: 22px;
+    }
+    .low_div p{
+        font-size: 16px;
+    }
+    .last_div{
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        padding: 20px;
+        margin: 35px;
+        h4{
+            display: inline;
+            font-size: 23px;
+        }
+        p{
+            display: inline;
+            font-size: 19px;
+        }
+        hr{
+            transform:rotate(90deg) ;
+        }
+    }
+    .lsatHomeProduct {
+        overflow: hidden;
+        width: 100%;
+        height: auto;
+        margin: auto 1px;
+        left: 0;
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0%;
+    }
+    .bildingsInfo div {
+        border-radius: 15px;
+        width: 200px;
+        height: 100px;
+    }
+    .firstCONTACT{
+        width: 300px;
+    }
+}
+@media(min-width:552px) and (max-width:768px) {
+    body {
+        background-color: #1b1919;
+    }
+    .products {
+        flex-wrap: wrap;
+    }
+    .icon {
+        width: auto;
+        height: auto;
+        flex-wrap: wrap;
+        
+    }
+    .propatiesBanner {
+        width: 100%;
+        height: 300px;
+    }
+    .mainDiv {
+        width: 100%;
+        flex-direction:column ;
+    }
+    .high_div{
+        font-size: 22px;
+    }
+    .low_div p{
+        font-size: 16px;
+    }
+    .imgText{
+        margin: 100px auto;
+    }
+    .videoDiv {
+        width: 450px;
+        height: 250px;
+
+        iframe {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+
+        }
+    }
+    .imgTextFirst h2{
+        font-size: 22px;
+    }
+    .homeProduct {
+        overflow: hidden;
+        width: 100%;
+        height: auto;
+        margin: auto 1px;
+        left: 0;
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .homeProduct_img{
+        width: 500px;
+        height: 500px;
+    }
+    .middle_div{
+        width: 400px;
+        height: 400px;
+    }
+    .last_div{
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        h4{
+            display: inline;
+            font-size: 25px;
+        }
+        p{
+            display: inline;
+            font-size: 22px;
+        }
+    }
+    .lsatHomeProduct {
+        overflow: hidden;
+        width: 100%;
+        height: auto;
+        margin: auto 1px;
+        left: 0;
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0%;
+    }
+    .lowFirstDiv{
+        width: 300px;
+        height: auto;
+    }
+    .lowMiddleDiv{
+        margin-top: 80px;
+        width: 300px;
+        height: auto;
+    }
+    .lowLastDiv{
+        height: auto;
+        width: 70%;
+        margin-top: 90px;
+    }
+    .lowFirstDiv_text {
+        font-size: 28px;
+        margin-top: 0;
+    }
+    .lowFirstDiv_text2 p{
+        font-size: 22px;
+    }
+    .bildingsInfo{
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin: 150px auto;
+    }
+    .bildingsInfo div {
+        border-radius: 15px;
+        width: 300px;
+        height: auto;
+        p{
+            font-size: 20px;
+        }
+    }
+    .sing_in  form input{
+        width: 500px;
+    }
+    .menu {
+        width: 100%;
+        height: 0;
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        left: 0;
+        transition: 0.5s;
+        padding: 0 20px;
+        top: 100%;
+        background-color: #1b1919;
+        overflow: hidden;
+
+        ul {
+            flex-direction: column;
+            width: 80%;
+
+            li {
+                width: 100%;
+                border: 2px solid white;
+                border-radius: 20px;
+            }
+        }
+    }
+    .menu_btn{
+        display: flex;
+    }
+    .menu_btn:hover~ .menu{
+        height: 300px;
+       padding: 15px;
+    }    
+}
+
+@media(min-width:320px) and (max-width:552px) {
+    body {
+        background-color: #1b1919;
+    }
+    .bildingsInfo{
+        margin-top: 160px;
+        margin-bottom: 60px;
+        div{
+            p{
+                font-size: 24px;
+            }
+        }
+       
+    }
+    .products {
+        flex-wrap: wrap;
+    }
+    .propatiesBanner {
+        width: 100%;
+        height: 300px;
+
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    .videoDiv {
+        width: 250px;
+        height: 150px;
+
+        iframe {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+
+        }
+    }
+
+    .homeProduct{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .homeProduct_img{
+        width: 100%;
+        height: 300px;
+        background-position: center;
+    }
+    .middle_div{
+        width: 100%;
+        height: 300px;
+    }
+    .high_div h2{
+        font-size: 15px;
+    }
+    .last_div{
+        width: 100%;
+        margin: 5px;
+        box-shadow: 0 0 10px grey;
+        height: 300px;
+        h4{
+            font-size: 15px;
+        }
+        p{
+            font-size: 13px;
+        }
+    }
+    .lsatHomeProduct {
+        overflow: hidden;
+        width: 100%;
+        height: auto;
+        margin: auto 1px;
+        left: 0;
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .bildingsInfo{
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .bildingsInfo div {
+        border-radius: 15px;
+        width: 300px;
+        height: auto;
+    }
+    .imgText{
+        margin: 200px auto;
+        h2{
+            font-size: 25px;
+        }
+    }
+    .imgTextFirst h2{
+        font-size: 20px;
+    }
+    .icon {
+        width: auto;
+        height: auto;
+        flex-wrap: wrap;
+        font-size: 20px;
+    }
+    .mainDiv {
+        width: 100%;
+        flex-direction: column;
+    }
+    .item {
+        width: 80%;
+        height: 550px;
+        gap: 60px;
+    }
+    .sing_in{
+        width: 100%;
+    }
+    .contactBunner {
+        height: 300px;
+    }
+    .homeBunner{
+        height: 300px;
+    }
+    .low_div p{
+        font-size: 15px;
+        padding: 18px;
+    }
+    .high_div h2{
+        font-size:20px ;
+    }
+    .lowDiv{
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .imgText{
+        margin-top: 50px;
+    }
+    .lowFirstDiv{
+        width: auto;
+        height: auto;
+        height: 300px;
+        margin: 10px;
+    }
+    .lowFirstDiv_text{
+        width: auto;
+        height: auto;
+        padding: 28px;
+        font-size: 20px;
+    }
+    .lowFirstDiv_text2 h4{
+        font-size: 16px;
+    }
+    .lowFirstDiv_text2 p{
+        font-size: 14px;
+    }
+    .lowLastDiv{
+        height: auto;
+    }
+    .lowLastDiv_text{
+        font-size: 23px;
+    }
+    .lowLastDiv_text2{
+        font-size: 16px;
+    }
+    .lowMiddleDiv{
+        height: 300px;
+    }
+    .menu {
+        width: 100%;
+        height: 0;
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        left: 0;
+        transition: 0.5s;
+        padding: 0 20px;
+        top: 100%;
+        background-color: #1b1919;
+        overflow: hidden;
+
+        ul {
+            flex-direction: column;
+            width: 80%;
+
+            li {
+                width: 100%;
+                border: 2px solid white;
+                border-radius: 20px;
+            }
+        }
+    }
+    .menu_btn{
+        display: flex;
+    }
+    .menu_btn:hover~ .menu{
+        height: 300px;
+       padding: 15px;
+    } 
+}
